@@ -38,6 +38,8 @@ capture:
       - directory: ${project.projectDir}
 analyze:
   mode: central
+  coverity:
+    cov-analyze: ["--webapp-security", "--enable-audit-mode"]
 install:
   coverity:
     version: default
