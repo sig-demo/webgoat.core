@@ -8,9 +8,9 @@ project:
 capture:
   build:
     cleanCommands:
-    - shell: [msbuild, WebGoatCore.sln, '/t:Clean']
+    - shell: [dotnet, clean]
     buildCommands:
-    - shell: [msbuild, WebGoatCore.sln, '/t:Build']
+    - shell: [dotnet, build]
   fileSystem:
     ears:
       extensions: [ear]
