@@ -16,7 +16,10 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-       
+        
+    - name: Restore
+      run: dotnet restore
+        
     # Perform Polaris Analysis
     - name: Polaris (SAST)
       run: |
